@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gracias | Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    h1, p {
+        color: #ffffff;
+        text-align: center;
+    }
+    .message-box {
+        text-align: center;
+    }
+</style>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Pablo Sánchez</a>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav>
+                    <ul class="nav-list" id="nav-list">
+                        <li class="nav-item">
+                            <a href="/inicio.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/inicio.html#about" class="nav-link">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/inicio.html#xp" class="nav-link">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/inicio.html#skills" class="nav-link">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/inicio.html#services" class="nav-link">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/inicio.html#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#testimonials" class="nav-link">Testimonios</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="/inicio.html#contact" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="message-box">
+                <h1>Tus datos han sido recibidos</h1>
+                <p>Gracias por contactarme. Me pondré en contacto contigo lo antes posible.</p>
+                <a href="inicio.html" class="btn">Volver al inicio</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Funcionalidad del menú móvil
+        const menuToggle = document.getElementById('menu-toggle');
+        const navList = document.getElementById('nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
