@@ -258,7 +258,7 @@ a:hover {
     align-items: center;
     overflow: hidden;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(fondo.jpeg) center/cover no-repeat;
+        url(fondo.avif) center/cover no-repeat;
 }
 
 .hero-content {
