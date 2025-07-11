@@ -361,7 +361,7 @@
                         <span class="portfolio-category">Diseño de marca</span>
                         <h3 class="portfolio-title">Camiseta KOI</h3>
                         <div class="portfolio-links">
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <!-- <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a> -->
                             <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
                         </div>
                     </div>
@@ -372,8 +372,7 @@
                         <span class="portfolio-category">Logotipos</span>
                         <h3 class="portfolio-title">Versiones logo KOI</h3>
                         <div class="portfolio-links">
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+<!-- <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a> -->                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
                         </div>
                     </div>
                 </div>
@@ -383,19 +382,17 @@
                         <span class="portfolio-category">Merchandising</span>
                         <h3 class="portfolio-title">Diseño camiseta MG</h3>
                         <div class="portfolio-links">
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+<!-- <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a> -->                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="merch">
-                    <img src="images/star wars.avif" alt="Proyecto 4" class="portfolio-image">
+                    <img src="images/pokemon.avif" alt="Proyecto 4" class="portfolio-image">
                     <div class="portfolio-overlay">
                         <span class="portfolio-category">Merchandising</span>
-                        <h3 class="portfolio-title">Diseño camiseta Star War</h3>
+                        <h3 class="portfolio-title">Diseño camisetas Pokemon GO</h3>
                         <div class="portfolio-links">
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+<!-- <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a> -->                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
                         </div>
                     </div>
                 </div>
@@ -405,8 +402,7 @@
                         <span class="portfolio-category">Merchandising</span>
                         <h3 class="portfolio-title">Diseño camiseta Ironman</h3>
                         <div class="portfolio-links">
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+<!-- <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a> -->                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
                         </div>
                     </div>
                 </div>
@@ -416,8 +412,7 @@
                         <span class="portfolio-category">Merchandising</span>
                         <h3 class="portfolio-title">Diseño camiseta Witch King</h3>
                         <div class="portfolio-links">
-                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
-                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+<!-- <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a> -->                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
                         </div>
                     </div>
                 </div>
@@ -528,7 +523,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="social-media">
+                    <!-- <div class="social-media">
                         <h3>Sígueme en redes sociales</h3>
                         <div class="footer-social">
                             <a href="#"     class="social-link"><i class="fab fa-facebook-f"></i></a>
@@ -538,7 +533,7 @@
                             <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
                             <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="contact-form">
                     <h3>Envíame un mensaje</h3>
@@ -576,12 +571,12 @@
                     <h3>Sobre mí</h3>
                     <p>Diseñador gráfico y web apasionado por crear experiencias digitales impactantes que conectan
                         marcas con audiencias.</p>
-                    <div class="footer-social">
+                    <!-- <div class="footer-social">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="footer-widget">
                     <h3>Enlaces rápidos</h3>
@@ -617,6 +612,18 @@
                 <p class="copyright">&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
             </div>
         </div>
+    <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+        <button class="lightbox-close" id="lightbox-close">
+            <i class="fas fa-times"></i>
+        </button>
+        <img src="" alt="" class="lightbox-image" id="lightbox-image">
+        <div class="lightbox-info">
+            <div class="lightbox-category" id="lightbox-category"></div>
+            <h3 class="lightbox-title" id="lightbox-title"></h3>
+        </div>
+    </div>
+</div>
     </footer>
 
     <script>
@@ -741,7 +748,68 @@ const animateSkillBars = () => {
                 });
             });
         });
+// Añade este JavaScript para la funcionalidad
+document.addEventListener('DOMContentLoaded', function() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxCategory = document.getElementById('lightbox-category');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxClose = document.getElementById('lightbox-close');
+    
+    // Encuentra todos los iconos de búsqueda en los portfolio items
+    const searchIcons = document.querySelectorAll('.portfolio-item .fa-search');
+    
+    // Añade el evento click a cada icono de búsqueda
+    searchIcons.forEach(icon => {
+        icon.closest('a').addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const portfolioItem = this.closest('.portfolio-item');
+            const image = portfolioItem.querySelector('.portfolio-image');
+            const category = portfolioItem.querySelector('.portfolio-category').textContent;
+            const title = portfolioItem.querySelector('.portfolio-title').textContent;
+            
+            // Set lightbox content
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+            lightboxCategory.textContent = category;
+            lightboxTitle.textContent = title;
+            
+            // Show lightbox
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
 
+    // Función para cerrar lightbox
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Cerrar con botón X
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    // Cerrar haciendo clic en el fondo
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Cerrar con tecla Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+
+    // Prevenir cerrar cuando se hace clic en el contenido
+    document.querySelector('.lightbox-content').addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+});
         
     </script>
 </body>
